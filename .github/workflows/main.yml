@@ -24,7 +24,9 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: CI says HI
-        run: echo Hello, world!
+      - name: Generating sites...
+        run: ./compile.sh
+        
+        
         
       
