@@ -1,16 +1,25 @@
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8"/>
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-			<title> $title$ </title>
-		</head>
-		<body>
-			<h1> Viola példa weblapja</h1>
-			<div>
-				<div style="display: inline"><a href="./index.html">Kezdőlap</a></div>
-				<div style="display: inline"><a href="./rolunk.html">Rólunk</a></div>
-			</div>
-			$body$
-		</body>
-	</html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/base.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/components.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.5/dist/utilities.min.css" />
+		<title> $title$ </title>
+	</head>
+	<body>
+		<h1 class="text-2xl sm:text-4xl font-serif font-extrabold text-center text-red-500 m-12"> Viola példa weblapja</h1>
+		<div class="text-center bg-red-700 text-red-200 p-4 mb-4">
+			<div class="mr-12 hover:text-red-50 hover:bg-red-600" style="display: inline"><a href="./index.html">Kezdőlap</a></div>
+			<div class="hover:text-red-50 hover:bg-red-600" style="display: inline"><a href="./rolunk.html">Rólunk</a></div>
+		</div>
+		<div class="grid justify-center mb-8">
+		    <div class="prose">
+		        $body$
+		    </div>
+		</div>
+	</body>
+</html>
+
